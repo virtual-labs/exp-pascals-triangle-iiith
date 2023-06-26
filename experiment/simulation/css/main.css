@@ -1,1 +1,259 @@
 /* You CSS goes in here */
+
+/* disabling text selection */
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+text {
+  pointer-events:none;
+}
+
+
+.container {
+  margin-top: 1%;
+}
+
+.column {
+  text-align: center;
+}
+
+#cy {
+  position: absolute;
+  width: 45%;
+  height: 50%;
+  margin: 5px;
+  top: 33%;
+  left: 28%;
+
+  border: 0.2rem solid black;
+}
+
+
+.success-message {
+  font-size: 1.2rem;
+  color: rgb(31, 170, 31);
+  font-weight: bold;
+}
+
+.failure-message {
+  font-size: 1.2rem;
+  color: rgb(228, 23, 23);
+  font-weight: bold;
+}
+
+.highlight {
+  border:3px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+/* for dropping instruction box  */
+
+.instructions-box {
+  max-height: 50px;
+  overflow: hidden;
+  transition: all .5s ease;
+ 
+}
+
+.instructions-box.expand {
+  max-height: 400px;
+}
+
+.v-instruction-container {
+  border: .2rem solid #97d23d;
+  justify-content: flex-start;
+}
+
+#observations {
+  font-size: 1.25em;
+}
+
+
+.success-table{
+  font-size: 1rem;
+  color: rgb(31, 170, 31);
+  font-weight: bold;
+}
+
+.failure-table{
+  font-size: 1rem;
+  color: rgb(228, 23, 23);
+  font-weight: bold;
+}
+
+.bold-table{
+  font-weight: bold;
+}
+
+.head{
+  display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.l0{
+    display:flex;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+  align-items: center;
+}
+.l1{
+    display:flex;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+  align-items: center;
+}
+.l2{
+    display:flex;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+  align-items: center;
+}
+.l3{
+    display:flex;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+  align-items: center;
+}
+.selection{
+  color: red;
+}
+.preface{
+  margin-top: 50px;
+  border: 5px;
+  border-color: red;
+  display:flex;
+  flex-direction: column;
+    height: 30px;
+    gap: 10px;
+  align-items: center;
+}
+.ul1{
+  display:flex;
+  flex-direction: column;
+    height: 30px;
+    align-items: center;
+    
+}
+
+.rules-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.rules-container {
+  display: inline-flex;
+  border: 5px solid red;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  padding-left: 20px ;
+}
+
+.controls {
+  display: inline-flex;
+  border: 5px solid red;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0 0 10px;
+}
+
+.image2{
+  width: 250px;
+  height: 250px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 5px solid red;
+  border-left: none;
+  margin-right: 20px;
+}
+
+.image1{
+  width: 250px;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 5px solid red;
+  border-right: none;
+}
+
+.group{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center
+}
+
+.triangle{
+  display: inline-block;
+  padding: 5px;
+  border: 5px solid red;
+  border-radius: 10px;
+}
+
+#errorId {
+  font-style: italic;
+  font-size: 12px;
+  color: brown;
+}
+
+#button2 {
+  margin-right: 5px;
+}
+
+.heading1{
+font-size: 28px;
+font-weight: 600;
+}
+
+.list1{
+  list-style-type: disc;
+}
+
+.gridBody{
+  display: grid;
+  grid-template-areas:
+    'details details details'
+    'main image control';
+}
+
+.gridBody > div:nth-child(1){
+  grid-area:details;
+  margin-left: 10%;
+  margin-top: 0.5%;
+  width: 80%;
+}
+
+.gridBody > div:nth-child(2){
+  width: 70%;
+  grid-area:main;
+}
+
+.gridBody > div:nth-child(3){
+  grid-area:image;
+}
+
+.gridBody > div:nth-child(4){
+  grid-area:control;
+  display: flex;
+  width: 80%;
+}
+
+.widthAuto{
+  width: auto;
+}

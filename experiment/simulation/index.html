@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Pascal's Triangle</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	
+	
 	<!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+	<body>
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div id="instruction-title" class="v-collapsible is-size-5">Before you start:</div>
+					<div class="v-content" style="text-align: left; padding-left: 5%; padding-right: 5%;">
+						<ul style="list-style: disc;">
+							<li>Pascal's triangle is the set of binomial coefficients arranged in a triangular formation.</li>
+								<li>Below is the pascal tringle for (a+b)^n where n ranges between 0 and 3.</li>
+								<li>Pascal's triangle can be navigated like a two dimensional array using <br>
+									 n to move between the rows and k to move between the elements in the rows.</li>
+								<li>Each of the binomial coefficients represent volume of a cuboid whose dimension is n.</li>
+								<li>Using the n and k input in the controls below, you can view the depictions <br>
+									 of those coefficients and that of their corresponding parent expansion.</li>
+								<li>Note that the value of k can only be between 0 to n as the number <br>
+									 of binomial coefficients in the expansion depends on the value of n.</li>
+								<li>The pascal tringle below will highlight the term being displayed.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
+			<div class="column is-2-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container" style="height:100%;">
+					<div class="v-datalist-title">Controls</div>
+					<div class="v-datalist-row">
+						<label for="fname">Enter n</label>
+					<input type="number" id="n" name="n" max="3" min="0"><br></div>
+					<div id="controls"></div>
+					<div id="errorId"></div>
+					<button id="button1" onclick="next()">Next</button>
+			<div>
+				<button id="button2" onclick="Generate()">Generate</button>
+			</div>
+			<div>
+				<button id="button3" onclick="reload()">Reload</button>
+			</div>
+					</div>
+				</div>
+			</div>	
+
+		<div class="column is-8-desktop is-12-tablet is-12-mobile">
+			<div id="circuit-board">
+				<div id="working-area">
+					<div id="window" class="group">
+						<img id="output">
+						<img id="output2"></div>
+				</div>
+			</div>
+		</div>
+
+			<div class="column is-2-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Binomial expansion <br> of (a+b)^n</div>
+					<div class="v-datalist-row">
+						<div id="ptriangle" class="triangle">
+						<div class="l0"><span id="n00">1</span></div>
+						<div class="l1"><span id="n10">a</span><span id="n11">b</span></div>
+						<div class="l2"><span id="n20">a^2</span><span id="n21">2ab</span><span id="n22">b^2</span></div>
+						<div class="l3"><span id="n30">a^3</span><span id="n31">3a^2b</span><span id="n32">3ab^2</span><span id="n33">b^2</span></div>
+						</div>
+						<div id="observations"></div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
 		<!-- Your code goes here-->
 
 	<!-- Add JS at the bottom of HTML file --> 
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
         <script src="./js/main.js"></script>
 </body>
 </html>

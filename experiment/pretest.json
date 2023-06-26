@@ -2,35 +2,43 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "In this term of binomial expansion of 6c2 a^2 b^4. which of these is the binomial coefficient",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "6p2",
+        "b": "15",
+        "c": "a^2 b^4",
+        "d": "none of these"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "b": "Binomial coefficeint is the constant part of product that any element in any binomial expansion is multiplied with."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "For what value of r does the binomial coefficient 7cr have the value 21",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "5",
+        "b": "2",
+        "c": "all of the above",
+        "d": "none of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "the value of ncr is same as nc(n-r)."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "if we add the values of second column third row in pascal's triangle for (a+b)^n and (b+c)^n, we get ",
+      "answers": {
+        "a": "ab+bc",
+        "b": "2(ab+bc)",
+        "c": "4",
+        "d": "none of these"
+      },
+      "explanations": {
+        "c": "pascal's triangle only has binomial coefficients and not the individual elements of a binomial expansion"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
