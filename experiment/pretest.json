@@ -2,11 +2,25 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "In this term of binomial expansion of 6c2 a^2 b^4. which of these is the binomial coefficient",
+      "question": "Binomial expansion of $(a+b)^4+(a-b)^4$ will be __",
       "answers": {
-        "a": "6p2",
-        "b": "15",
-        "c": "a^2 b^4",
+        "a": "$5$",
+        "b": "$2$",
+        "c": "all of the above",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "c": "the value of $\binom{n}{r}$ is same as $\binom{n}{n-r}$."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In this term of binomial expansion of $\binom{6}{2}a^2b^4$. which of these is the binomial coefficient?",
+      "answers": {
+        "a": "$\frac{6!}{2!}$",
+        "b": "$15$",
+        "c": "$a^2b^4$",
         "d": "none of these"
       },
       "explanations": {
@@ -16,31 +30,42 @@
       "difficulty": "beginner"
     },
     {
-      "question": "For what value of r does the binomial coefficient 7cr have the value 21",
+      "question": "For what value of $r$ does the binomial coefficient $\binom{7}{r}$ equal $21$?",
       "answers": {
-        "a": "5",
-        "b": "2",
+        "a": "$5$",
+        "b": "$2$",
         "c": "all of the above",
         "d": "none of the above"
       },
       "explanations": {
-        "c": "the value of ncr is same as nc(n-r)."
+        "c": "the value of $\binom{n}{r}$ is same as $\binom{n}{n-r}$."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "if we add the values of second column third row in pascal's triangle for (a+b)^n and (b+c)^n, we get ",
+      "question": "What is $2^n$ is equal to?",
       "answers": {
-        "a": "ab+bc",
-        "b": "2(ab+bc)",
-        "c": "4",
-        "d": "none of these"
+        "a": "Summation $\binom{n}{r}$",
+        "b": "$2n$",
+        "c": "$n$",
+        "d": "none of the above"
       },
       "explanations": {
-        "c": "pascal's triangle only has binomial coefficients and not the individual elements of a binomial expansion"
+        "a": "$2^n$ can be written as $(1+1)^n$ where $x=1$ and $y=1$ for the binomial expansion."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How many terms will be added for the summation in the binomial expansion of $(a+b)^6$?",
+      "answers": {
+        "a": "$5$",
+        "b": "$7$",
+        "c": "$6$",
+        "d": "none of the above"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

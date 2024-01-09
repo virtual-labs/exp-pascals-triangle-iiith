@@ -1,1 +1,1 @@
-## Pascal's triangle
+## Binomial coefficients and Pascal's triangle

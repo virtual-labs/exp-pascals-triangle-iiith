@@ -1,3 +1,3 @@
-# Aim
+## Aim
 
 This experiment aims to introduce you to the basics of binomial expansion. We start by introducing binomial theorem and binomial expansion. we do this by providing a formula for binomial expansion for any given degree. we then illustrate the binomial expansion in the form of a pascal's triangle, discuss its significance and provide a few examples. The expansion can also be expressed in the terms of volume of cuboids, where the various terms and the entire expansion can be viewed as volume of cubes of verious dimensions. this will be demonstrated for the first few rows of the binomial expansion in the experiment.

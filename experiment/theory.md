@@ -1,18 +1,22 @@
 ### Theory
 
-## Pascal's trinagle
+# Binomial theorem
 
-Pascal's tringle is a figure that constitues of binomial coefficients from various elements of binomial expansion of increasing degrees starting at 0 degree at the top.
+Binomial theorem is the algebraic theorem used to expand the term $(x+y)^n$ where n is a non negative integer. More formally
 
-                                                        1
-                                                    1       1
-                                                1       2       1
-                                            1       3       3       1
-                                        1       4       6       4       1
-                                    1       5       10      10      5       1
-                                1       6       15      20      15      6       1
+$$(x+y)^n=\sum^n_(k=0)\binom{n}{k}x^ky^(n-k)$$
 
-                                                Pascal's triangle
+Where the right hand side in the theorem gives us the binomial expansion.
+
+# binomial coefficient
+
+Binomial coefficient is $\binom{n}{k}$ which is the coefficient part of the terms in the binomial expansion. As the binomial coefficient does not depend on the value of $x$ and $y$, the value of binomial coefficient remains the same even though the term in binomial expansion for the corresponding $n$ and $k$ might change.
+
+# Pascal's triangle 
+
+Pascal's tringle is a figure that constitues of binomial coefficients $\binom{n}{k}$ from the binomial expansion with $n$, starting from $0$, increasing the further we go down and $k$, starting from $0$, increasing the further we go to the right . It is named after the French mathamatecian Blaise Pascal, though its origins predate him.
+
+<image.pascaltriangle>
 
 The figure above represents Pascal's triangle which itself exhibits many interesting properties. Some of these include
 
