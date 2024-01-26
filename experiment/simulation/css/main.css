@@ -175,20 +175,16 @@ text {
 .image2{
   width: 250px;
   height: 250px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   border: 5px solid red;
-  border-left: none;
   margin-right: 20px;
 }
 
 .image1{
   width: 250px;
   height: 250px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;;
   border: 5px solid red;
-  border-right: none;
 }
 
 .group{
@@ -240,12 +236,12 @@ font-weight: 600;
 }
 
 .gridBody > div:nth-child(2){
-  width: 70%;
   grid-area:main;
 }
 
 .gridBody > div:nth-child(3){
   grid-area:image;
+  width: auto;
 }
 
 .gridBody > div:nth-child(4){
@@ -257,3 +253,8 @@ font-weight: 600;
 .widthAuto{
   width: auto;
 }
+
+#k_desc {
+  padding: 0 30px;
+}
+
