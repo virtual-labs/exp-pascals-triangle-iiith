@@ -6,12 +6,12 @@ controlsDiv.style.width = 'auto';
 
 let n;
 let k;
-let n_arr=["the cuboid representing n=0 is just a point as the binomial expansion for n=0 is just 1.","the cuboid representing n=1 is a single line split in two parts with the length a+b","the cuboid representing n=2 is square divided into four parts with the length of a side being a+b","the cuboid representing n=3 is a cube divided into eight parts with the length of a side being a+b"]
+let n_arr=["The cuboid representing n=0 is just a point as the binomial expansion for n=0 is just 1.","The cuboid representing n=1 is a single line split in two parts with the length a+b","The cuboid representing n=2 is square divided into four parts with the length of a side being a+b","The cuboid representing n=3 is a cube divided into eight parts with the length of a side being a+b"]
 let k0=["k=0 for n=0 represents the constant 1 which is just a point"]
 let k1=["k=0 for n=1 represents a line with the length a from the binomial expansion term a","k=1 for n=1 represents a line with the length b from the binomial expansion term b"]
 let k2=["k=0 for n=2 represents a square with the length of a side equal to a from the binomial expansion term a^2","k=2 for n=2 represents a square with the length of a side equal to b from the binomial expansion term b^2","k=2 for n=2 represents a square with the length of a side equal to b from the binomial expansion term b^2"]
 let k3=["k=0 for n=3 represents a^3 from thr binomial expansion in the form of a cube with the length of its side equal to a","k=1 for n=3 represents 3a^2b from thr binomial expansion in the form of three cuboids with the length of its sides equal to a,a and b","k=2 for n=3 represents 3ab^2 from thr binomial expansion in the form of three cuboids with the length of its sides equal to a,b and b","k=3 for n=3 represents b^3 from thr binomial expansion in the form of a cube with the length of its side equal to b"]
-
+let cl1,cl2;
 document.getElementById('button2').style.visibility = 'hidden';
 function next(){
     n = document.getElementById("n").value;
@@ -43,6 +43,10 @@ else{
 }}
 function Generate()
 {
+    cl1=document.getElementById("n_desc").classList;
+    cl2=document.getElementById("k_desc").classList;
+    cl1.add("desc_box");
+    cl2.add("desc_box");
     const alreadySelected = document.querySelector('.selection');
     if (alreadySelected) {
         alreadySelected.classList.remove('selection');
