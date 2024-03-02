@@ -176,7 +176,7 @@ text {
   width: 250px;
   height: 250px;
   border-radius: 10px;
-  border: 5px solid red;
+  border: 4px solid red;
   margin-right: 20px;
 }
 
@@ -184,7 +184,7 @@ text {
   width: 250px;
   height: 250px;
   border-radius: 10px;;
-  border: 5px solid red;
+  border: 4px solid red;
 }
 
 .group{
@@ -261,8 +261,21 @@ font-weight: 600;
 .desc_box{
   background-color: rgb(96, 96, 96);
   color: rgb(243, 243, 243);
-  border: 5px solid red;
+  border: 4px solid red;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+}
+
+#button3{
+  margin: 5px;
+}
+
+.green_box{
+  border: 4px solid #97d23d;;
+  border-radius: 10px;
+}
+
+#observation_container{
+  justify-content: end;
 }

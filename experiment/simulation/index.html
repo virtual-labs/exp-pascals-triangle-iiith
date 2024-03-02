@@ -38,12 +38,12 @@
 					<input type="number" id="n" name="n" max="3" min="0"><br></div>
 					<div id="controls"></div>
 					<div id="errorId"></div>
-					<button id="button1" onclick="next()">Next</button>
+					<button id="button1" class="v-button"  onclick="next()">Next</button>
 			<div>
-				<button id="button2" onclick="Generate()">Generate</button>
+				<button id="button2" class="v-button" onclick="Generate()">Generate</button>
 			</div>
 			<div>
-				<button id="button3" onclick="reload()">Reload</button>
+				<button id="button3" class="v-button"  onclick="reload()">Reload</button>
 			</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 
-		<div class="column is-2-desktop is-4-tablet is-12-mobile">
+		<div id="observation_container" class="column is-2-desktop is-4-tablet is-12-mobile">
 			<div class="v-datalist-container components-list">
 				<div class="v-datalist-title">Binomial expansion of \[(a+b)^n\]</div>
 				<div class="v-datalist-row">
@@ -74,7 +74,7 @@
 					<div class="l0"><span id="n00">\[1\]</span></div>
 					<div class="l1"><span id="n10">\[a\]</span><span id="n11">\[b\]</span></div>
 					<div class="l2"><span id="n20">\[a^2\]</span><span id="n21">\[2ab\]</span><span id="n22">\[b^2\]</span></div>
-					<div class="l3"><span id="n30">\[a^3\]</span><span id="n31">\[3a^2b\]</span><span id="n32">\[3ab^2\]</span><span id="n33">\[b^2\]</span></div>
+					<div class="l3"><span id="n30">\[a^3\]</span><span id="n31">\[3a^2b\]</span><span id="n32">\[3ab^2\]</span><span id="n33">\[b^3\]</span></div>
 					</div>
 					<div id="observations"></div>
 				</div>

@@ -11,7 +11,7 @@ let k0=["k=0 for n=0 represents the constant 1 which is just a point"]
 let k1=["k=0 for n=1 represents a line with the length a from the binomial expansion term a","k=1 for n=1 represents a line with the length b from the binomial expansion term b"]
 let k2=["k=0 for n=2 represents a square with the length of a side equal to a from the binomial expansion term a^2","k=2 for n=2 represents a square with the length of a side equal to b from the binomial expansion term b^2","k=2 for n=2 represents a square with the length of a side equal to b from the binomial expansion term b^2"]
 let k3=["k=0 for n=3 represents a^3 from thr binomial expansion in the form of a cube with the length of its side equal to a","k=1 for n=3 represents 3a^2b from thr binomial expansion in the form of three cuboids with the length of its sides equal to a,a and b","k=2 for n=3 represents 3ab^2 from thr binomial expansion in the form of three cuboids with the length of its sides equal to a,b and b","k=3 for n=3 represents b^3 from thr binomial expansion in the form of a cube with the length of its side equal to b"]
-let cl1,cl2;
+let cl1,cl2,cl3;
 document.getElementById('button2').style.visibility = 'hidden';
 function next(){
     n = document.getElementById("n").value;
@@ -21,16 +21,18 @@ function next(){
 
 if(copyN && isInteger && n>=0 && n<4){
 const label = document.createElement("label");
-const node = document.createTextNode("enter k");
+const node = document.createTextNode("Enter k");
 label.appendChild(node);
 const input2 = document.createElement("input");
 input2.setAttribute("id","input2");
 input2.setAttribute("type","number");
 input2.setAttribute("max",n);
 input2.setAttribute("min","0");
+const br=document.createElement("br");
 const element = document.getElementById("controls");
 element.innerHTML="";
 element.appendChild(label);
+element.appendChild(br);
 element.appendChild(input2);
 
 document.getElementById('button1').style.visibility = 'hidden';
@@ -39,14 +41,10 @@ document.getElementById('n').disabled = true;
 document.getElementById('errorId').innerHTML = "";         
 }
 else{
-    document.getElementById('errorId').innerHTML = "\[n\] should be an integer between 0 and 3";
+    document.getElementById('errorId').innerHTML = "\\n\\ should be an integer between 0 and 3";
 }}
 function Generate()
 {
-    cl1=document.getElementById("n_desc").classList;
-    cl2=document.getElementById("k_desc").classList;
-    cl1.add("desc_box");
-    cl2.add("desc_box");
     const alreadySelected = document.querySelector('.selection');
     if (alreadySelected) {
         alreadySelected.classList.remove('selection');
@@ -56,6 +54,11 @@ function Generate()
     k = Number(k);
     const isIntegerk = Number.isInteger(n);
     if(copyk && isIntegerk && k>=0 && k<=n){
+    cl3=document.getElementById("circuit-board").classList.add("green_box");
+    cl1=document.getElementById("n_desc").classList;
+    cl2=document.getElementById("k_desc").classList;
+    cl1.add("desc_box");
+    cl2.add("desc_box");
     console.log({ n, k })
     let selection = document.getElementById(`n${n}${k}`);
     selection.setAttribute("class","selection");
