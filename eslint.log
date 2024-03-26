@@ -1,0 +1,12 @@
+
+/home/runner/work/exp-pascals-triangle-iiith/exp-pascals-triangle-iiith/experiment/simulation/js/main.js
+   8:5   warning  'k' is defined but never used             no-unused-vars
+  14:13  warning  'cl3' is assigned a value but never used  no-unused-vars
+  16:10  warning  'next' is defined but never used          no-unused-vars
+  46:10  warning  'Generate' is defined but never used      no-unused-vars
+  90:2   warning  Unnecessary semicolon                     no-extra-semi
+  91:10  warning  'reload' is defined but never used        no-unused-vars
+
+✖ 6 problems (0 errors, 6 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

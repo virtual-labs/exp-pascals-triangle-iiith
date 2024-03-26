@@ -1,0 +1,63 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "For what value of $k$ is the binomial coefficient of $a^{k}b^{5-k}$ in the expansion of $(a+b)^5$ equals $10$?",
+      "answers": {
+        "a": "$2$",
+        "b": "$3$",
+        "c": "both $a$ and $b$",
+        "d": "none of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of these constructions define Pascal's triangle?",
+      "answers": {
+        "a": "binomial expansion of $(a+b)^c$ where $c$ is a constant and $a$,$b<=i$ where $i$ is the row number",
+        "b": "binomial coefficient $\binom{n}{r}$ where $n$ is the row number and $r$ is the column number both starting at $0$",
+        "c": "binomial expansion of $c^i$ where $c$ is a constant and $i$ is the row number",
+        "d": "none of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the summation of a row of Pascal's triangle represent?",
+      "answers": {
+        "a": "binomial expansion of $(a+b)^n$ for $a=b=1$ where $n$ is the number of elements in the row",
+        "b": "binomial expansion of $(a+b)^n$ for $a=b=1$ where $n$ is the row index starting from $0$ at the top of the triangle",
+        "c": "square of the summation of elements of the previous row",
+        "d": "none of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If we add the values of second column third row in pascal's triangle for $(a+b)^n$ and $(b+c)^n$, we get ______ ",
+      "answers": {
+        "a": "$ab+bc$",
+        "b": "$2(ab+bc)$",
+        "c": "$4$",
+        "d": "none of these"
+      },
+      "explanations": {
+        "c": "pascal's triangle only has binomial coefficients and not the individual elements of a binomial expansion"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How can an element of Pascal's triangle be derived using existing elements?",
+      "answers": {
+        "a": "by adding all the elements in the previous row and multiplying by the row index",
+        "b": "by adding the two elements directly on top of it in the previous row",
+        "c": "by adding all the elements in the previous row and multiplying by $2$",
+        "d": "none of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
