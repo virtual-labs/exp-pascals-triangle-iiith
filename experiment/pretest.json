@@ -2,21 +2,18 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Binomial expansion of $(a+b)^4+(a-b)^4$ will be __",
+      "question": "Binomial expansion term of $(a+b)^4+(a-b)^4$ for $k=3$ will be __",
       "answers": {
-        "a": "$5$",
-        "b": "$2$",
-        "c": "all of the above",
+        "a": "$2(^4C_3a^3b)$",
+        "b": "$^4C_3a^3b$",
+        "c": "0",
         "d": "none of the above"
-      },
-      "explanations": {
-        "c": "the value of $\binom{n}{r}$ is same as $\binom{n}{n-r}$."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "In this term of binomial expansion of $\binom{6}{2}a^2b^4$. which of these is the binomial coefficient?",
+      "question": "In this term of binomial expansion of $^6C_2a^2b^4$. which of these is the binomial coefficient?",
       "answers": {
         "a": "$\frac{6!}{2!}$",
         "b": "$15$",
@@ -30,7 +27,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "For what value of $r$ does the binomial coefficient $\binom{7}{r}$ equal $21$?",
+      "question": "For what value of $r$ does the binomial coefficient $^7C_r$ equal $21$?",
       "answers": {
         "a": "$5$",
         "b": "$2$",
@@ -38,7 +35,7 @@
         "d": "none of the above"
       },
       "explanations": {
-        "c": "the value of $\binom{n}{r}$ is same as $\binom{n}{n-r}$."
+        "c": "the value of $^nC_r$ is same as $nC_(n-r)$."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -46,7 +43,7 @@
     {
       "question": "What is $2^n$ is equal to?",
       "answers": {
-        "a": "Summation $\binom{n}{r}$",
+        "a": "Summation $^nC_r$",
         "b": "$2n$",
         "c": "$n$",
         "d": "none of the above"
@@ -58,7 +55,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "How many terms will be added for the summation in the binomial expansion of $(a+b)^6$?",
+      "question": "How many terms are there in the binomial expansion of $(a+b)^6$?",
       "answers": {
         "a": "$5$",
         "b": "$7$",

@@ -16,7 +16,7 @@
       "question": "Which of these constructions define Pascal's triangle?",
       "answers": {
         "a": "binomial expansion of $(a+b)^c$ where $c$ is a constant and $a$,$b<=i$ where $i$ is the row number",
-        "b": "binomial coefficient $\binom{n}{r}$ where $n$ is the row number and $r$ is the column number both starting at $0$",
+        "b": "binomial coefficient $^{n}C_{r}$ where $n$ is the row number and $r$ is the column number both starting at $0$",
         "c": "binomial expansion of $c^i$ where $c$ is a constant and $i$ is the row number",
         "d": "none of the above"
       },
