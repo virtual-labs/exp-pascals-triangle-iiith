@@ -1,5 +1,3 @@
-## Theory
-
 # Binomial theorem
 
 Binomial theorem is the algebraic theorem used to expand the term $(x+y)^n$ where n is a non negative integer. More formally
