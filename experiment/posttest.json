@@ -9,6 +9,12 @@
         "c": "both $a$ and $b$",
         "d": "none of the above"
       },
+      "explanations": {
+        "a": "Partially correct! $^5C_2 = 10$, making k=2 one valid answer, but it's not the only one.",
+        "b": "Partially correct! $^5C_3 = 10$, making k=3 another valid answer, but it's not the only one.",
+        "c": "Correct! Due to the symmetry property of Pascal's Triangle, $^5C_2 = ^5C_3 = 10$, so both k=2 and k=3 give coefficients of 10.",
+        "d": "Incorrect. We can verify that both k=2 and k=3 give coefficients of 10 in the expansion."
+      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
@@ -20,7 +26,13 @@
         "c": "binomial expansion of $c^i$ where $c$ is a constant and $i$ is the row number",
         "d": "none of the above"
       },
-      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Pascal's triangle is about coefficients, not about variable values being limited by row numbers.",
+        "b": "Correct! Each element in Pascal's triangle is indeed $^nC_r$ where n is the row number and r is the position in that row, both starting from 0.",
+        "c": "Incorrect. This would give powers of a constant, not the binomial coefficients needed for Pascal's triangle.",
+        "d": "Incorrect. Option b correctly defines the construction of Pascal's triangle."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
@@ -30,6 +42,12 @@
         "b": "binomial expansion of $(a+b)^n$ for $a=b=1$ where $n$ is the row index starting from $0$ at the top of the triangle",
         "c": "square of the summation of elements of the previous row",
         "d": "none of the above"
+      },
+      "explanations": {
+        "a": "Incorrect. The number of elements in a row is n+1, not n, where n is the power in the expansion.",
+        "b": "Correct! When we put a=b=1 in $(a+b)^n$, we get $2^n$, which equals the sum of elements in row n.",
+        "c": "Incorrect. While the sum grows exponentially, it's not related to squaring the previous row's sum.",
+        "d": "Incorrect. The sum of each row does equal $2^n$ where n is the row number (starting from 0)."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -43,7 +61,10 @@
         "d": "none of these"
       },
       "explanations": {
-        "c": "pascal's triangle only has binomial coefficients and not the individual elements of a binomial expansion"
+        "a": "Incorrect. Pascal's triangle contains only coefficients, not the actual terms with variables.",
+        "b": "Incorrect. This answer includes variables, but we're only adding numerical coefficients.",
+        "c": "Correct! In the third row (n=2), second column (r=1), the value is 2 for both triangles, so 2+2=4.",
+        "d": "Incorrect. The sum is indeed 4 as we're adding the same position from two identical Pascal triangles."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -56,8 +77,116 @@
         "c": "by adding all the elements in the previous row and multiplying by $2$",
         "d": "none of the above"
       },
+      "explanations": {
+        "a": "Incorrect. Each element depends only on the two elements above it, not the entire row.",
+        "b": "Correct! Each element is the sum of the two numbers directly above it in the previous row, following Pascal's rule.",
+        "c": "Incorrect. This would give much larger numbers than the actual values in Pascal's triangle.",
+        "d": "Incorrect. Option b correctly describes how to derive elements in Pascal's triangle."
+      },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "In Pascal's triangle, what is the relationship between $^nC_r$ and $^nC_{n-r}$?",
+      "answers": {
+        "a": "They are consecutive numbers",
+        "b": "They are equal",
+        "c": "Their sum equals $2^n$",
+        "d": "Their product equals $^nC_n$"
+      },
+      "explanations": {
+        "a": "Incorrect. These values appear symmetrically in the same row and aren't necessarily consecutive.",
+        "b": "Correct! This is the symmetry property of Pascal's triangle: $^nC_r = ^nC_{n-r}$. For example, $^5C_2 = ^5C_3 = 10$.",
+        "c": "Incorrect. The sum of ALL elements in row n equals $2^n$, not just these two elements.",
+        "d": "Incorrect. Their product doesn't have this relationship with $^nC_n$ (which equals 1)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the sum of squares of binomial coefficients in the expansion of $(x+y)^4$?",
+      "answers": {
+        "a": "70",
+        "b": "35",
+        "c": "14",
+        "d": "28"
+      },
+      "explanations": {
+        "a": "Correct! The squares of coefficients are: $1^2 + 4^2 + 6^2 + 4^2 + 1^2 = 1 + 16 + 36 + 16 + 1 = 70$.",
+        "b": "Incorrect. This is half of the correct sum. You might have forgotten to square some terms.",
+        "c": "Incorrect. This is the sum of the coefficients without squaring them: 1 + 4 + 6 + 4 + 1 = 14.",
+        "d": "Incorrect. This is twice the sum of the coefficients without squaring: 2(1 + 4 + 6 + 4 + 1) = 28."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If $^{10}C_r = ^{10}C_{r+1}$, what is the value of $r$?",
+      "answers": {
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "7"
+      },
+      "explanations": {
+        "a": "Incorrect. When r=4, $^{10}C_4 = 210$ and $^{10}C_5 = 252$, which are not equal.",
+        "b": "Incorrect. When r=5, $^{10}C_5 = 252$ and $^{10}C_6 = 210$, which are not equal.",
+        "c": "Incorrect. When r=6, $^{10}C_6 = 210$ and $^{10}C_7 = 120$, which are not equal.",
+        "d": "Correct! When r=7, $^{10}C_7 = ^{10}C_8 = 45$. This occurs because 7 = $\\frac{10-1}{2}$, following the pattern where consecutive terms are equal.",
+        "difficulty": "advanced"
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "In Pascal's triangle, if you multiply each number in row 5 by its position number (starting from 0), what is the sum of these products?",
+      "answers": {
+        "a": "80",
+        "b": "160",
+        "c": "120",
+        "d": "100"
+      },
+      "explanations": {
+        "a": "Incorrect. This underestimates the sum. Remember to multiply each term by its position: 0×1 + 1×5 + 2×10 + 3×10 + 4×5 + 5×1 = 80.",
+        "b": "Correct! The calculation is: 0×1 + 1×5 + 2×10 + 3×10 + 4×5 + 5×1 = 0 + 5 + 20 + 30 + 20 + 5 = 160.",
+        "c": "Incorrect. This is the sum of the numbers in row 5 multiplied by 2, not by their positions.",
+        "d": "Incorrect. This is closer to the sum of the numbers in row 5 (32) multiplied by 3."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If $P(n,r)$ represents the sum of all products formed by taking $r$ different numbers from row $n$ of Pascal's triangle, what is $P(4,2)$?",
+      "answers": {
+        "a": "70",
+        "b": "85",
+        "c": "100",
+        "d": "110"
+      },
+      "explanations": {
+        "a": "Incorrect. This is the sum of squares of row 4 elements (1² + 4² + 6² + 4² + 1²), not the sum of products of pairs.",
+        "b": "Correct! Row 4 is [1,4,6,4,1]. Taking all possible pairs: (1×4)+(1×6)+(1×4)+(1×1)+(4×6)+(4×4)+(4×1)+(6×4)+(6×1)+(4×1) = 4+6+4+1+24+16+4+24+6+4 = 85.",
+        "c": "Incorrect. This overestimates the sum. Try listing all possible products of pairs and adding them.",
+        "d": "Incorrect. This is too large. Remember we're only taking products of pairs, not triples or larger combinations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In Pascal's triangle, what is the value of $\\sum_{k=0}^n k^2\\binom{n}{k}$ in terms of $n$?",
+      "answers": {
+        "a": "$n2^{n-1}$",
+        "b": "$n(n+1)2^{n-2}$",
+        "c": "$n^22^{n-2}$",
+        "d": "$n(n+1)2^{n-1}$"
+      },
+      "explanations": {
+        "a": "Incorrect. This formula underestimates the sum. The correct formula needs to account for both n and n+1 terms.",
+        "b": "Incorrect. While this includes both n and n+1, the power of 2 is incorrect. The final result should be larger.",
+        "c": "Incorrect. This only accounts for n² and misses the additional terms that come from the summation.",
+        "d": "Correct! This can be proven using the fact that $k\\binom{n}{k} = n\\binom{n-1}{k-1}$ and applying it twice to get $k^2$. The result $n(n+1)2^{n-1}$ represents the sum of squares of positions multiplied by their corresponding binomial coefficients."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     }
   ]
 }

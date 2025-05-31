@@ -9,19 +9,28 @@
         "c": "0",
         "d": "none of the above"
       },
+      "explanations": {
+        "a": "Incorrect. This would be true if we were only expanding $(a+b)^4$, but we also have $(a-b)^4$ which changes the result.",
+        "b": "Incorrect. This only considers the term from $(a+b)^4$ without accounting for $(a-b)^4$.",
+        "c": "Correct! When k=3, the terms from $(a+b)^4$ and $(a-b)^4$ cancel each other out because of the negative sign.",
+        "d": "Incorrect. The answer is actually zero due to the cancellation of terms."
+      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
       "question": "In this term of binomial expansion of $^6C_2a^2b^4$. which of these is the binomial coefficient?",
       "answers": {
-        "a": "$\\frac 6! 2!$",
+        "a": "$\\frac{6!}{2!}$",
         "b": "$15$",
         "c": "$a^2b^4$",
         "d": "none of these"
       },
       "explanations": {
-        "b": "Binomial coefficeint is the constant part of product that any element in any binomial expansion is multiplied with."
+        "a": "Incorrect. This is incomplete as it doesn't include division by (6-2)! in the denominator.",
+        "b": "Correct! The binomial coefficient $^6C_2$ equals 15, which is the constant multiplier in this term.",
+        "c": "Incorrect. This is the variable part of the term, not the binomial coefficient.",
+        "d": "Incorrect. Option b (15) is the correct binomial coefficient."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -35,7 +44,10 @@
         "d": "none of the above"
       },
       "explanations": {
-        "c": "the value of $^nC_r$ is same as $nC_(n-r)$."
+        "a": "Partially correct. $^7C_5 = 21$ due to the formula $\\frac{7!}{5!(7-5)!}$",
+        "b": "Partially correct. $^7C_2 = 21$ due to the formula $\\frac{7!}{2!(7-2)!}$",
+        "c": "Correct! Due to the symmetry property of Pascal's Triangle, $^7C_2 = ^7C_5 = 21$",
+        "d": "Incorrect. Both values 2 and 5 give the result 21."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -49,7 +61,10 @@
         "d": "none of the above"
       },
       "explanations": {
-        "a": "$2^n$ can be written as $(1+1)^n$ where $x=1$ and $y=1$ for the binomial expansion."
+        "a": "Correct! When we expand $(1+1)^n$ using binomial theorem, we get sum of all $^nC_r$ which equals $2^n$",
+        "b": "Incorrect. $2n$ is just multiplication, while $2^n$ is exponential growth",
+        "c": "Incorrect. $n$ is much smaller than $2^n$ for values greater than 2",
+        "d": "Incorrect. Option a is the correct answer as proven by binomial expansion"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -62,8 +77,116 @@
         "c": "$6$",
         "d": "none of the above"
       },
+      "explanations": {
+        "a": "Incorrect. The number of terms is always n+1 where n is the power, so it should be 7 terms",
+        "b": "Correct! For power n=6, we get terms from $k=0$ to $k=6$, giving us 7 terms total",
+        "c": "Incorrect. While the power is 6, we get 7 terms due to including the term where k=0",
+        "d": "Incorrect. The answer is 7 terms as explained in option b"
+      },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "If we expand $(x+y)^8$, what is the coefficient of the term $x^5y^3$?",
+      "answers": {
+        "a": "$56$",
+        "b": "$28$",
+        "c": "$70$",
+        "d": "$35$"
+      },
+      "explanations": {
+        "a": "Correct! The coefficient is $^8C_5$ which equals $\\frac{8!}{5!(8-5)!} = 56$. This represents the number of ways to choose 5 x's from 8 positions.",
+        "b": "Incorrect. This is $^8C_2$, which would be the coefficient of $x^2y^6$.",
+        "c": "Incorrect. This is $^8C_4$, which would be the coefficient of $x^4y^4$.",
+        "d": "Incorrect. This is $^7C_3$, which is not relevant to this expansion."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In Pascal's Triangle, what is the sum of the squares of the elements in row 4 (starting from row 0)?",
+      "answers": {
+        "a": "70",
+        "b": "36",
+        "c": "100",
+        "d": "82"
+      },
+      "explanations": {
+        "a": "Correct! The fourth row contains 1,4,6,4,1 and sum of their squares (1² + 4² + 6² + 4² + 1² = 1 + 16 + 36 + 16 + 1 = 70) equals 70.",
+        "b": "Incorrect. 36 is just the square of the middle term (6²) in row 4, not the sum of all squared terms.",
+        "c": "Incorrect. 100 would be too large - remember we're summing 1² + 4² + 6² + 4² + 1², not multiplying them.",
+        "d": "Incorrect. 82 is not the correct sum. Try calculating each square term individually and adding them up."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the value of $\\sum_{k=0}^n (-1)^k \\binom{n}{k}$ where n is a positive integer?",
+      "answers": {
+        "a": "$2^n$",
+        "b": "$-1$",
+        "c": "$0$",
+        "d": "$1$"
+      },
+      "explanations": {
+        "a": "Incorrect. $2^n$ is the sum when all terms are positive, but here we have alternating signs.",
+        "b": "Incorrect. The result is independent of n and equals 0, as it represents $(1-1)^n$.",
+        "c": "Correct! This sum equals $(1-1)^n = 0^n = 0$ for any positive integer n. It's a fundamental result from the binomial theorem.",
+        "d": "Incorrect. While this would be true for n=0, the question specifies n as a positive integer."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If $\\binom{n}{r} = \\binom{n}{r+1}$, what is the value of r in terms of n?",
+      "answers": {
+        "a": "$r = \\frac{n-1}{2}$",
+        "b": "$r = \\frac{n}{2}$",
+        "c": "$r = n-1$",
+        "d": "$r = \\frac{n+1}{2}$"
+      },
+      "explanations": {
+        "a": "Incorrect. While this looks similar, it doesn't satisfy the equation when you substitute it back.",
+        "b": "Incorrect. This would make the first combination larger than the second.",
+        "c": "Incorrect. This value would make the second combination equal to zero.",
+        "d": "Correct! When $r = \\frac{n+1}{2}$, $\\binom{n}{r} = \\binom{n}{r+1}$ because of the symmetry property and the fact that these terms are adjacent in the same row."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the coefficient of $x^3$ in the expansion of $(1+x+x^2)^3$?",
+      "answers": {
+        "a": "7",
+        "b": "10",
+        "c": "6",
+        "d": "12"
+      },
+      "explanations": {
+        "a": "Correct! To get $x^3$, we need combinations like (x²)(x)(1), (x)(x)(x), and (x²)(1)(1). Adding these combinations with their respective multiplicities gives us 7.",
+        "b": "Incorrect. 10 would be the coefficient of $x^4$ in this expansion.",
+        "c": "Incorrect. 6 is not enough - you're missing some combinations that produce $x^3$.",
+        "d": "Incorrect. 12 is too large - you may be counting some combinations multiple times."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If $\\binom{n}{r} \\cdot \\binom{r}{k} = \\binom{n}{k} \\cdot \\binom{n-k}{r-k}$, this represents which combinatorial identity?",
+      "answers": {
+        "a": "Vandermonde's Identity",
+        "b": "Pascal's Identity",
+        "c": "Chu-Vandermonde Identity",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Incorrect. Vandermonde's Identity involves sums of products of binomial coefficients.",
+        "b": "Incorrect. Pascal's Identity states that $\\binom{n+1}{r} = \\binom{n}{r} + \\binom{n}{r-1}$.",
+        "c": "Correct! This is the multiplicative form of the Chu-Vandermonde Identity, which describes ways of selecting r items from n items when k must come from a specific subset.",
+        "d": "Incorrect. This is a well-known identity named after Chu and Vandermonde."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }
