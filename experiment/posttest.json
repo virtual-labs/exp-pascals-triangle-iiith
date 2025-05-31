@@ -132,10 +132,10 @@
         "a": "Incorrect. When r=4, $^{10}C_4 = 210$ and $^{10}C_5 = 252$, which are not equal.",
         "b": "Incorrect. When r=5, $^{10}C_5 = 252$ and $^{10}C_6 = 210$, which are not equal.",
         "c": "Incorrect. When r=6, $^{10}C_6 = 210$ and $^{10}C_7 = 120$, which are not equal.",
-        "d": "Correct! When r=7, $^{10}C_7 = ^{10}C_8 = 45$. This occurs because 7 = $\\frac{10-1}{2}$, following the pattern where consecutive terms are equal.",
-        "difficulty": "advanced"
+        "d": "Correct! When r=7, $^{10}C_7 = ^{10}C_8 = 45$. This occurs because 7 = $\\frac{10-1}{2}$, following the pattern where consecutive terms are equal."
       },
-      "correctAnswer": "d"
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     },
     {
       "question": "In Pascal's triangle, if you multiply each number in row 5 by its position number (starting from 0), what is the sum of these products?",
