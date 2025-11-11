@@ -4,7 +4,7 @@
 
 Binomial theorem is the algebraic theorem used to expand the term $(x+y)^n$ where n is a non negative integer. More formally
 
-$$(x+y)^n=\sum^n_(k=0)\binom{n}{k}x^ky^(n-k)$$
+$$(x+y)^n=\sum_{k=0}^{n}\binom{n}{k}x^{k}y^{n-k}$$
 
 Where the right hand side in the theorem gives us the binomial expansion.
 
