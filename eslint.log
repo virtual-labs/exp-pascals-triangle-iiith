@@ -1,0 +1,22 @@
+
+/home/runner/work/exp-pascals-triangle-iiith/exp-pascals-triangle-iiith/experiment/simulation/Binomial.js
+   100:15  warning  'bottomPadding' is assigned a value but never used  no-unused-vars
+   297:15  warning  'bottomPadding' is assigned a value but never used  no-unused-vars
+   442:5   warning  Duplicate name 'checkAnswer'                        no-dupe-class-members
+   498:5   warning  Duplicate name 'drawPascalTriangleWithAnswer'       no-dupe-class-members
+   508:15  warning  'bottomPadding' is assigned a value but never used  no-unused-vars
+   653:5   warning  Duplicate name 'checkAnswer'                        no-dupe-class-members
+   709:5   warning  Duplicate name 'drawPascalTriangleWithAnswer'       no-dupe-class-members
+   719:15  warning  'bottomPadding' is assigned a value but never used  no-unused-vars
+   865:15  warning  'maxRows' is assigned a value but never used        no-unused-vars
+  1012:10  warning  'checkAnswer' is defined but never used             no-unused-vars
+  1016:10  warning  'newQuestion' is defined but never used             no-unused-vars
+  1020:10  warning  'toggleHint' is defined but never used              no-unused-vars
+
+/home/runner/work/exp-pascals-triangle-iiith/exp-pascals-triangle-iiith/experiment/simulation/mobile-detection.js
+  393:7   warning  'mobileDetection' is assigned a value but never used  no-unused-vars
+  396:38  warning  'module' is not defined                               no-undef
+  397:3   warning  'module' is not defined                               no-undef
+
+✖ 15 problems (0 errors, 15 warnings)
+
