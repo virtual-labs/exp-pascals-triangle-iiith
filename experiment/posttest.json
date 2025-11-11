@@ -121,20 +121,20 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "If $^{10}C_r = ^{10}C_{r+1}$, what is the value of $r$?",
+      "question": "In Pascal's triangle, if $^{10}C_r = ^{10}C_{10-r}$ (symmetry property), what is the relationship between r and 10-r?",
       "answers": {
-        "a": "4",
-        "b": "5",
-        "c": "6",
-        "d": "7"
+        "a": "They are always equal",
+        "b": "They sum to 10",
+        "c": "They are consecutive",
+        "d": "r must be odd"
       },
       "explanations": {
-        "a": "Incorrect. When r=4, $^{10}C_4 = 210$ and $^{10}C_5 = 252$, which are not equal.",
-        "b": "Incorrect. When r=5, $^{10}C_5 = 252$ and $^{10}C_6 = 210$, which are not equal.",
-        "c": "Incorrect. When r=6, $^{10}C_6 = 210$ and $^{10}C_7 = 120$, which are not equal.",
-        "d": "Correct! When r=7, $^{10}C_7 = ^{10}C_8 = 45$. This occurs because 7 = $\\frac{10-1}{2}$, following the pattern where consecutive terms are equal."
+        "a": "Incorrect. They are only equal when r = 5, which is the midpoint.",
+        "b": "Correct! By definition, r + (10-r) = 10. The symmetry property states that $^{10}C_r = ^{10}C_{10-r}$ for all valid r, meaning positions equidistant from the ends have equal values.",
+        "c": "Incorrect. They are equidistant from the ends (summing to 10), but not necessarily consecutive.",
+        "d": "Incorrect. r can be any value from 0 to 10; the symmetry property doesn't depend on r being odd or even."
       },
-      "correctAnswer": "d",
+      "correctAnswer": "b",
       "difficulty": "advanced"
     },
     {
