@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binomial Coefficients & Pascal's Triangle - Discrete Mathematics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="mobile-detection.js"></script>
 </head>
-<body>
-		<!-- Your code goes here-->
+<body class="bg-gray-50 text-gray-800">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+  <div class="max-w-7xl mx-auto px-4 pb-8 space-y-4">
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-3 gap-4">
+      
+      <!-- Pascal's Triangle Visualization (Left Side - Takes 2 columns) -->
+      <section class="lg:col-span-2 bg-white p-4 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold text-indigo-700 mb-3 text-center">Pascal's Triangle</h2>
+        <div class="flex justify-center">
+          <canvas id="pascalCanvas" class="border rounded-lg bg-white"></canvas>
+        </div>
+        <div class="mt-3 text-center text-xs text-gray-600">
+          <p>Each number is the sum of the two numbers above it • Row n, Position k gives you C(n,k)</p>
+        </div>
+      </section>
+
+      <!-- Controls Section (Right Side) -->
+      <section class="bg-white p-4 rounded-xl shadow-lg">
+        <div class="space-y-4">
+          <!-- Question -->
+          <div class="text-center">
+            <h2 class="text-xl font-bold text-indigo-700 mb-2">Find the Value</h2>
+            <div class="bg-indigo-50 p-3 rounded-lg">
+              <div class="text-lg font-bold text-indigo-800 mb-1">
+                What is <span id="questionText" class="text-2xl text-purple-600">C(5,2)</span>?
+              </div>
+            </div>
+          </div>
+          <!-- Answer Input -->
+          <div>
+            <h3 class="text-lg font-semibold text-center mb-2">Your Answer</h3>
+            <div class="space-y-3">
+              <input type="number" id="answerInput" class="w-full p-3 text-xl text-center border-2 rounded-lg focus:border-indigo-500 focus:outline-none" 
+                     placeholder="Enter answer" min="0">
+              <button onclick="checkAnswer()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg">
+                Submit Answer
+              </button>
+              <div id="feedback" class="hidden p-3 rounded-lg text-center font-medium text-sm"></div>
+            </div>
+          </div>
+          <!-- Streak Counter -->
+          <div class="border-t pt-4">
+            <div class="text-center">
+              <h3 class="text-lg font-semibold mb-2">Streak</h3>
+              <div class="mb-3">
+                <div class="text-3xl font-bold text-purple-600" id="streakCount">0</div>
+                <div class="text-xs text-gray-600">Correct in a row</div>
+              </div>
+              <button onclick="newQuestion()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg text-sm">
+                Next Question
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Theory Section (Colorful, Card-based) -->
+    <section id="helpSection" class="transition-opacity duration-500 mt-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="card bg-gradient-to-br from-indigo-500 to-purple-500 text-white p-5 rounded-xl flex-1 min-w-[220px] max-w-xs shadow-lg">
+            <h4 class="font-semibold text-lg mb-2">What is C(n, k)?</h4>
+            <p class="text-sm">C(n, k) is the number of ways to choose k items from n. It is also called a binomial coefficient.</p>
+          </div>
+          <div class="card bg-gradient-to-br from-pink-500 to-fuchsia-500 text-white p-5 rounded-xl flex-1 min-w-[220px] max-w-xs shadow-lg">
+            <h4 class="font-semibold text-lg mb-2">Formula</h4>
+            <p class="text-sm">C(n, k) = n! / (k! × (n-k)!)</p>
+          </div>
+          <div class="card bg-gradient-to-br from-emerald-500 to-cyan-500 text-white p-5 rounded-xl flex-1 min-w-[220px] max-w-xs shadow-lg">
+            <h4 class="font-semibold text-lg mb-2">Pascal's Property</h4>
+            <p class="text-sm">C(n, k) = C(n-1, k-1) + C(n-1, k)</p>
+          </div>
+          <div class="card bg-gradient-to-br from-yellow-400 to-orange-400 text-white p-5 rounded-xl flex-1 min-w-[220px] max-w-xs shadow-lg">
+            <h4 class="font-semibold text-lg mb-2">Example</h4>
+            <p class="text-sm">C(4, 2) = 6<br>Row 4, Position 2 in Pascal's Triangle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="Binomial.js"></script>
 </body>
 </html>

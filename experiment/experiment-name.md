@@ -1,1 +1,1 @@
-## Experiment name
+## Binomial coefficients and Pascal's triangle
